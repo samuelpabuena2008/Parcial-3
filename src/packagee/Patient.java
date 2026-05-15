@@ -5,6 +5,7 @@
 package packagee;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 /**
  *
@@ -17,6 +18,7 @@ public class Patient extends User {
     private boolean gender;
     private long phone;
     private String address;
+    private ArrayList<Appointment> appointments;
     private Hospitalization hospitalization;
 
     public void setEmail(String email) {
@@ -42,8 +44,14 @@ public class Patient extends User {
     public void setHospitalization(Hospitalization hospitalization) {
         this.hospitalization = hospitalization;
     }
+
+    public ArrayList<Appointment> getAppointments() {
+        return appointments;
+    }
     
-    
+    public void addAppointment(Appointment a) {
+        this.appointments.add(a);
+    }
 
     public Patient(long id, String username, String firstname, String lastname, String password, String email, LocalDate birthdate, boolean gender, long phone, String address) {
         super(id, username, firstname, lastname, password);
@@ -52,6 +60,7 @@ public class Patient extends User {
         this.gender = gender;
         this.phone = phone;
         this.address = address;
+        this.appointments = new ArrayList<>();
     }
     
 }

@@ -39,5 +39,29 @@ public class Appointment {
     public String getId() {
         return id;
     }
+
+    public Doctor getDoctor() {
+        return doctor;
+    }
+
+    public Specialty getSpecialty() {
+        return specialty;
+    }
+
+    public LocalDateTime getDatetime() {
+        return datetime;
+    }
+
+    public boolean isType() {
+        return type;
+    }
+
+    public AppointmentStatus getStatus() {
+        return status;
+    }
+
+    public Patient getPatient() {
+        return patient;
+    }
     
 }
