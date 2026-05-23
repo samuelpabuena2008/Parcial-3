@@ -1,4 +1,4 @@
-package core.view;
+package core.views;
 
 import core.controllers.utils.Response;
 import core.controllers.utils.Status;
@@ -181,8 +181,8 @@ public class DoctorView extends javax.swing.JFrame implements Observer {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        panelRound1 = new core.view.PanelRound();
-        panelRound2 = new core.view.PanelRound();
+        panelRound1 = new core.views.PanelRound();
+        panelRound2 = new core.views.PanelRound();
         btnClose = new javax.swing.JButton();
         lblTitle = new javax.swing.JLabel();
         btnBack = new javax.swing.JButton();
@@ -1629,8 +1629,8 @@ public class DoctorView extends javax.swing.JFrame implements Observer {
     private javax.swing.JTextField txtUpdateOffice;
     private javax.swing.JTextField txtUpdateUsername;
     private javax.swing.JTextField txtUpdatePassword;
-    private core.view.PanelRound panelRound1;
-    private core.view.PanelRound panelRound2;
+    private core.views.PanelRound panelRound1;
+    private core.views.PanelRound panelRound2;
     // End of variables declaration//GEN-END:variables
 }
 

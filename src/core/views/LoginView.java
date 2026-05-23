@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package core.view;
+package core.views;
 
 import core.controllers.utils.Response;
 import core.controllers.utils.Status;
@@ -49,11 +49,11 @@ public class LoginView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        panelRound1 = new core.view.PanelRound();
-        panelRound2 = new core.view.PanelRound();
+        panelRound1 = new core.views.PanelRound();
+        panelRound2 = new core.views.PanelRound();
         btnClose = new javax.swing.JButton();
         tabsMain = new javax.swing.JTabbedPane();
-        panelRound3 = new core.view.PanelRound();
+        panelRound3 = new core.views.PanelRound();
         lblLoginTitle = new javax.swing.JLabel();
         txtLoginUsername = new javax.swing.JTextField();
         lblLoginUsername = new javax.swing.JLabel();
@@ -521,9 +521,9 @@ public class LoginView extends javax.swing.JFrame {
     private javax.swing.JTextField txtRegEmail;
     private javax.swing.JTextField txtRegUsername;
     private javax.swing.JTextField txtRegPassword;
-    private core.view.PanelRound panelRound1;
-    private core.view.PanelRound panelRound2;
-    private core.view.PanelRound panelRound3;
+    private core.views.PanelRound panelRound1;
+    private core.views.PanelRound panelRound2;
+    private core.views.PanelRound panelRound3;
     // End of variables declaration//GEN-END:variables
 }
 

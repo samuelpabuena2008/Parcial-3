@@ -1,4 +1,4 @@
-package core.view;
+package core.views;
 
 import core.controllers.utils.Response;
 import core.controllers.utils.Status;
@@ -74,11 +74,11 @@ public class AdminView extends javax.swing.JFrame implements Observer {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        panelRound1 = new core.view.PanelRound();
-        panelRound2 = new core.view.PanelRound();
+        panelRound1 = new core.views.PanelRound();
+        panelRound2 = new core.views.PanelRound();
         btnClose = new javax.swing.JButton();
         lblTitle = new javax.swing.JLabel();
-        panelRound3 = new core.view.PanelRound();
+        panelRound3 = new core.views.PanelRound();
         btnGoToDoctorView = new javax.swing.JButton();
         btnGoToPatientView = new javax.swing.JButton();
         lblDocFirstname = new javax.swing.JLabel();
@@ -549,9 +549,9 @@ public class AdminView extends javax.swing.JFrame implements Observer {
     private javax.swing.JTextField txtDocOffice;
     private javax.swing.JTextField txtDocUsername;
     private javax.swing.JTextField txtDocPassword;
-    private core.view.PanelRound panelRound1;
-    private core.view.PanelRound panelRound2;
-    private core.view.PanelRound panelRound3;
+    private core.views.PanelRound panelRound1;
+    private core.views.PanelRound panelRound2;
+    private core.views.PanelRound panelRound3;
     // End of variables declaration//GEN-END:variables
 }
 

@@ -7,7 +7,7 @@ import core.controllers.utils.Response;
 import com.formdev.flatlaf.FlatDarkLaf;
 import core.models.storage.Database;
 import core.models.storage.IStorage;
-import core.view.LoginView;
+import core.views.LoginView;
 
 /**
  * Punto de entrada único de la aplicación Ospedale.
