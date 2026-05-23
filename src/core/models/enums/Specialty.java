@@ -1,15 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Enum.java to edit this template
- */
-package core;
+package core.models.enums;
+
+import core.models.*;
+import core.models.enums.*;
+import core.controllers.utils.Response;
 
 /**
- *
+ * Especialidades médicas disponibles en el sistema Ospedale.
+ * 
  * @author edangulo
  */
 public enum Specialty {
-    
+
     GENERAL_MEDICINE,
     CARDIOLOGY,
     PEDIATRICS,
@@ -21,5 +22,6 @@ public enum Specialty {
     ONCOLOGY,
     OPHTHALMOLOGY,
     INTERNAL_MEDICINE
-    
 }
+
+

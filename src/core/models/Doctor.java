@@ -1,46 +1,59 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package core.models;
 
-import core.Specialty;
-import core.User;
-import core.models.Appointment;
-import core.models.Hospitalization;
+import core.models.*;
+import core.models.enums.*;
+import core.controllers.utils.Response;
+
 import java.util.ArrayList;
+import java.util.Map;
 
 /**
- *
+ * Modelo de doctor. Hereda de User y agrega especialidad, licencia y oficina.
+ * Contiene las listas de citas y hospitalizaciones asignadas.
+ * 
  * @author edangulo
  */
 public class Doctor extends User {
-    
+
     private Specialty specialty;
     private String licenceNumber;
     private String assignedOffice;
     private ArrayList<Appointment> appointments;
     private ArrayList<Hospitalization> hospitalizations;
 
-    public Doctor(long id, String username, String firstname, String lastname, String password, Specialty specialty, String licenceNumber, String assignedOffice) {
+    public Doctor(long id, String username, String firstname, String lastname, String password,
+                  Specialty specialty, String licenceNumber, String assignedOffice) {
         super(id, username, firstname, lastname, password);
-        hospitalizations = new ArrayList<>();
         this.specialty = specialty;
         this.licenceNumber = licenceNumber;
         this.assignedOffice = assignedOffice;
+        this.appointments = new ArrayList<>();
+        this.hospitalizations = new ArrayList<>();
+    }
+
+    // --- Getters ---
+
+    public Specialty getSpecialty() {
+        return specialty;
+    }
+
+    public String getLicenceNumber() {
+        return licenceNumber;
+    }
+
+    public String getAssignedOffice() {
+        return assignedOffice;
     }
 
     public ArrayList<Appointment> getAppointments() {
         return appointments;
     }
 
-    public Specialty getSpecialty() {
-        return specialty;
+    public ArrayList<Hospitalization> getHospitalizations() {
+        return hospitalizations;
     }
-    
-    public boolean addHospitalization(Hospitalization hosp){
-        return hospitalizations.add(hosp);
-    }
+
+    // --- Setters ---
 
     public void setSpecialty(Specialty specialty) {
         this.specialty = specialty;
@@ -53,4 +66,24 @@ public class Doctor extends User {
     public void setAssignedOffice(String assignedOffice) {
         this.assignedOffice = assignedOffice;
     }
+
+    public void addAppointment(Appointment a) {
+        this.appointments.add(a);
+    }
+
+    public boolean addHospitalization(Hospitalization hosp) {
+        return hospitalizations.add(hosp);
+    }
+
+    @Override
+    public Map<String, String> serialize() {
+        Map<String, String> data = super.serialize();
+        data.put("type", "doctor");
+        data.put("specialty", specialty.name());
+        data.put("licenceNumber", licenceNumber);
+        data.put("assignedOffice", assignedOffice);
+        return data;
+    }
 }
+
+
