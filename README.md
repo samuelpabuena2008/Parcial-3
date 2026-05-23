@@ -2,6 +2,6 @@
 
 Integrantes
 
-Samuel Pabuena Garcia
-Karel Silva
-Gustavo de la oza
+Samuel Pabuena Garcia NRC: 2038
+Karel Silva NRC: 2038
+Gustavo De la ossa NRC: 2038
