@@ -21,7 +21,7 @@ public class Main {
 
         // Cargar datos iniciales desde JSON
         IStorage database = Database.getInstance();
-        database.loadFromJSON("users.json");
+        database.loadFromJSON("json/users.json");
 
         // Lanzar la vista de login
         java.awt.EventQueue.invokeLater(() -> {
