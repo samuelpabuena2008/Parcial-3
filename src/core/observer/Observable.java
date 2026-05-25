@@ -1,8 +1,5 @@
 package core.observer;
 
-import core.models.*;
-import core.models.enums.*;
-import core.controllers.utils.Response;
 
 /**
  * Interfaz que deben implementar las clases que emiten notificaciones de cambios.
