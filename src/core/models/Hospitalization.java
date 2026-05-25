@@ -1,8 +1,7 @@
 package core.models;
 
-import core.models.*;
-import core.models.enums.*;
-
+import core.models.enums.HospitalizationStatus;
+import core.models.enums.RoomType;
 import java.time.LocalDate;
 import java.util.LinkedHashMap;
 import java.util.Map;

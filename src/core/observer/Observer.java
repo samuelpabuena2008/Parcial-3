@@ -1,5 +1,9 @@
 package core.observer;
 
+import core.models.*;
+import core.models.enums.*;
+import core.controllers.utils.Response;
+
 /**
  * Interfaz que deben implementar las clases que desean recibir notificaciones
  * de cambios en los datos (patrón Observer).

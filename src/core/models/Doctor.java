@@ -1,8 +1,6 @@
 package core.models;
 
-import core.models.*;
-import core.models.enums.*;
-
+import core.models.enums.Specialty;
 import java.util.ArrayList;
 import java.util.Map;
 

@@ -1,16 +1,19 @@
 package core.controllers.hospitalization;
 
-import core.models.enums.*;
-import core.controllers.utils.*;
-
+import core.controllers.utils.Response;
+import core.controllers.utils.Serializer;
+import core.controllers.utils.Status;
+import core.controllers.utils.Validator;
 import core.models.Appointment;
 import core.models.Doctor;
+import core.models.Hospitalization;
 import core.models.Patient;
 import core.models.User;
-import core.models.Hospitalization;
-import java.time.LocalDate;
-
+import core.models.enums.AppointmentStatus;
+import core.models.enums.HospitalizationStatus;
+import core.models.enums.RoomType;
 import core.models.storage.IStorage;
+import java.time.LocalDate;
 
 /**
  * Controlador de hospitalizaciones.

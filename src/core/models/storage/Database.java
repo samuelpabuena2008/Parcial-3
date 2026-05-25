@@ -1,13 +1,13 @@
 package core.models.storage;
 
-import core.models.enums.*;
-
+import core.models.Administrator;
 import core.models.Appointment;
 import core.models.Doctor;
+import core.models.Hospitalization;
 import core.models.Patient;
 import core.models.User;
-import core.models.Hospitalization;
-import core.models.Administrator;
+import core.models.enums.AppointmentStatus;
+import core.models.enums.Specialty;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -18,10 +18,8 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
-
 import core.observer.EventType;
 import core.observer.Observer;
 

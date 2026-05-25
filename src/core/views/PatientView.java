@@ -96,8 +96,8 @@ public class PatientView extends javax.swing.JFrame implements Observer {
             txtUpdatePhone.setText(data.getOrDefault("phone", ""));
             txtUpdateAddress.setText(data.getOrDefault("address", ""));
             txtUpdateUsername.setText(data.getOrDefault("username", ""));
-            boolean isFemale = "true".equals(data.getOrDefault("gender", "false"));
-            cmbUpdateGender.setSelectedIndex(isFemale ? 2 : 1);
+            boolean isMale = "Male".equalsIgnoreCase(data.getOrDefault("gender", "Female"));
+            cmbUpdateGender.setSelectedIndex(isMale ? 2 : 1);
         }
     }
 

@@ -1,6 +1,7 @@
 package core.controllers.appointment;
 
 import core.controllers.utils.Response;
+import core.controllers.utils.Status;
 
 public interface IAppointmentController {
     Response requestAppointmentByDoctor(long patientId, long doctorId, String dateStr, String timeStr, String reason, boolean inPerson);

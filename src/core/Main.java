@@ -1,6 +1,5 @@
 package core;
 
-
 import com.formdev.flatlaf.FlatDarkLaf;
 import core.models.storage.Database;
 import core.models.storage.IStorage;

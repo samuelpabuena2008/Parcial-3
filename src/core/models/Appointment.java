@@ -1,8 +1,7 @@
 package core.models;
 
-import core.models.*;
-import core.models.enums.*;
-
+import core.models.enums.AppointmentStatus;
+import core.models.enums.Specialty;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;

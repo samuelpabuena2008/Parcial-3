@@ -1,10 +1,17 @@
 package core.controllers.appointment;
 
-import core.models.*;
-import core.models.enums.*;
-import core.controllers.utils.*;
+import core.controllers.utils.Response;
+import core.controllers.utils.Serializer;
+import core.controllers.utils.Status;
+import core.controllers.utils.Validator;
+import core.models.Appointment;
+import core.models.Doctor;
+import core.models.Patient;
+import core.models.Prescription;
+import core.models.User;
+import core.models.enums.AppointmentStatus;
+import core.models.enums.Specialty;
 import core.models.storage.IStorage;
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;

@@ -1,10 +1,16 @@
 package core.controllers.doctor;
 
-import core.models.*;
-import core.models.enums.*;
-import core.controllers.utils.*;
-
+import core.controllers.utils.Response;
+import core.controllers.utils.Serializer;
+import core.controllers.utils.Status;
+import core.controllers.utils.Validator;
+import core.models.Doctor;
+import core.models.Patient;
+import core.models.User;
+import core.models.enums.Specialty;
 import core.models.storage.IStorage;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Controlador de doctores.
@@ -125,7 +131,7 @@ public class DoctorController implements IDoctorController {
      * @return Response con List<Map<String,String>>
      */
     public Response getPatientList() {
-        java.util.List<Patient> patients = new java.util.ArrayList<>();
+        List<Patient> patients = new ArrayList<>();
         for (User u : database.getUsers()) {
             if (u instanceof Patient) {
                 patients.add((Patient) u);

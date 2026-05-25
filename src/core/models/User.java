@@ -1,6 +1,5 @@
 package core.models;
 
-
 import java.util.LinkedHashMap;
 import java.util.Map;
 

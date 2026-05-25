@@ -1,12 +1,18 @@
 package core.controllers.patient;
 
-import core.models.*;
-import core.models.enums.*;
-import core.controllers.utils.*;
-
-import java.time.LocalDate;
-
+import core.controllers.utils.Response;
+import core.controllers.utils.Serializer;
+import core.controllers.utils.Status;
+import core.controllers.utils.Validator;
+import core.models.Doctor;
+import core.models.Hospitalization;
+import core.models.Patient;
+import core.models.User;
+import core.models.enums.Specialty;
 import core.models.storage.IStorage;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Controlador de pacientes.
@@ -133,7 +139,7 @@ public class PatientController implements IPatientController {
      * @return Response con List<Map<String,String>>
      */
     public Response getDoctorList() {
-        java.util.List<Doctor> doctors = new java.util.ArrayList<>();
+        List<Doctor> doctors = new ArrayList<>();
         for (User u : database.getUsers()) {
             if (u instanceof Doctor) {
                 doctors.add((Doctor) u);
@@ -163,8 +169,8 @@ public class PatientController implements IPatientController {
      * @return Response con List<Map<String,String>>
      */
     public Response getPatientHospitalizations(long patientId) {
-        java.util.List<Hospitalization> patientHosps = new java.util.ArrayList<>();
-        for (core.models.Hospitalization h : database.getHospitalizations()) {
+        List<Hospitalization> patientHosps = new ArrayList<>();
+        for (Hospitalization h : database.getHospitalizations()) {
             if (h.getPatient().getId() == patientId) {
                 patientHosps.add(h);
             }

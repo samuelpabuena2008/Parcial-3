@@ -1,9 +1,8 @@
 package core.controllers.login;
 
-import core.models.*;
-import core.models.enums.*;
-import core.controllers.utils.*;
-
+import core.controllers.utils.Response;
+import core.controllers.utils.Status;
+import core.controllers.utils.Validator;
 import core.models.User;
 import core.models.storage.IStorage;
 
