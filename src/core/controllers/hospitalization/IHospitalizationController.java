@@ -1,7 +1,6 @@
 package core.controllers.hospitalization;
 
 import core.controllers.utils.Response;
-import core.controllers.utils.Status;
 
 public interface IHospitalizationController {
     Response requestHospitalization(long patientId, long doctorId, String dateStr, String expectedDischargeStr, String reason, String roomNumber);

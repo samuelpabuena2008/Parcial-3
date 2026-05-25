@@ -1,8 +1,6 @@
 package core.models.storage;
 
-import core.models.*;
 import core.models.enums.*;
-import core.controllers.utils.Response;
 
 import core.models.Appointment;
 import core.models.Doctor;
@@ -20,13 +18,11 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import core.observer.EventType;
-import core.observer.Observable;
 import core.observer.Observer;
 
 /**

@@ -1,6 +1,5 @@
 package core.controllers.hospitalization;
 
-import core.models.*;
 import core.models.enums.*;
 import core.controllers.utils.*;
 
@@ -10,10 +9,6 @@ import core.models.Patient;
 import core.models.User;
 import core.models.Hospitalization;
 import java.time.LocalDate;
-import java.time.format.DateTimeParseException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 
 import core.models.storage.IStorage;
 

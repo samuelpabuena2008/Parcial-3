@@ -1,8 +1,5 @@
 package core.models;
 
-import core.models.*;
-import core.models.enums.*;
-import core.controllers.utils.Response;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

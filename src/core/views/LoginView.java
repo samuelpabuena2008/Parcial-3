@@ -7,11 +7,9 @@ package core.views;
 import core.controllers.utils.Response;
 import core.controllers.utils.Status;
 
-import com.formdev.flatlaf.FlatDarkLaf;
 import java.awt.Color;
 import java.util.Map;
 import javax.swing.JOptionPane;
-import javax.swing.UIManager;
 
 import core.models.storage.IStorage;
 import core.controllers.login.LoginController;

@@ -1,8 +1,6 @@
 package core.models;
 
 import core.models.*;
-import core.models.enums.*;
-import core.controllers.utils.Response;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
